@@ -5,7 +5,7 @@ const app = express()
 
 app.set("view engine", "ejs")
 
-app.set("views", "C:/Users/adesh/OneDrive/Desktop/Nodenew/views");
+app.set("views", "webservices/views");
 
 
 app.use(express.json()); 
@@ -47,4 +47,5 @@ app.get ("/uploads/:filename", (req, res) => {
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000")
+
 })
